@@ -14,7 +14,10 @@ ul, ol, menu {
     list-style: none;
 }
 
-
+.footer--justify-sb {
+    display: flex;
+    justify-content: space-between;
+}
 
 header {
     background-color: #ff6900;
@@ -68,16 +71,21 @@ header .header__actions-box svg {
     gap: 20px;
 }
 
-.card__image {
-    height: 640px;
+.card {
+    position: relative;
+    width: calc((100% - 40px) /3 );
 }
 
 .card__image img {
-    height: 100%;
+    width: 100%;
 }
 
 .card__discount {
     background-color: red;
+}
+
+.card__article-name {
+    text-transform: uppercase;
 }
 
 .card__sostenibility {
@@ -85,11 +93,67 @@ header .header__actions-box svg {
 }
 
 .card__hearth {
-
+    padding: 16px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
 }
 
 .card__label {
     padding: 8px 10px;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.card__label-box {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.card__price {
+    color: red;
+}
+
+.card__old-price {
+    text-decoration: line-through;
+    color: black;
+}
+
+.hide-label {
+    position: relative;
+    z-index: -1;
+}
+
+.hide-label--only-discont {
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 32px 0;
+}
+
+.footer__info {
+    display: flex;
+    gap: 10px;
+    padding-top: 16px;
+}
+
+.footer__info a {
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+footer img {
+    height: 24px;
 }
