@@ -131,10 +131,6 @@ main {
     z-index: 3;
 }
 
-.card__hearth:hover {
-    color: red;
-}
-
 .card__label {
     padding: 8px 10px;
     color: white;
