@@ -26,6 +26,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 header .container {
@@ -63,6 +66,10 @@ header .header__actions-box svg {
     height: 16px;
 }
 
+main {
+    padding-top: 80px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -74,11 +81,34 @@ header .header__actions-box svg {
 .card {
     position: relative;
     width: calc((100% - 40px) /3 );
+    z-index: 1;
 }
 
 .card__image img {
     width: 100%;
 }
+
+/* .card__image--shown {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+} */
+
+.card__img--hidden {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.card__image:hover {
+    z-index: 2;
+}
+
 
 .card__discount {
     background-color: red;
