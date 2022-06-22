@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, menu {
+    list-style: none;
 }
 
 
@@ -11,9 +20,76 @@ header {
     background-color: #ff6900;
     color: white;
     padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: inherit;
+    justify-content: space-between;
+    align-items: inherit;
+}
+
+header a {
+    color: white;
+}
+
+header .header__logo {
+    height: 30px;
 }
 
 .container {
-    max-width: 1380px;
+    width: 1380px;
     margin: 0 auto;
+}
+
+.header__category-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header .header__actions-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header .header__actions-box svg {
+    height: 16px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 20px;
+}
+
+.card__image {
+    height: 640px;
+}
+
+.card__image img {
+    height: 100%;
+}
+
+.card__discount {
+    background-color: red;
+}
+
+.card__sostenibility {
+    background-color: green;
+}
+
+.card__hearth {
+
+}
+
+.card__label {
+    padding: 8px 10px;
+    color: white;
+    font-size: 10px;
 }
