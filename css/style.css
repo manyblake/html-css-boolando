@@ -1,0 +1,19 @@
+/* Reset rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: #ff6900;
+    color: white;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
