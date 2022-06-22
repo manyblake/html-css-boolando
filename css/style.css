@@ -88,13 +88,13 @@ main {
     width: 100%;
 }
 
-/* .card__image--shown {
+.card__image--default {
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 1;
-} */
+}
 
 .card__img--hidden {
     position: absolute;
@@ -105,10 +105,9 @@ main {
     z-index: 0;
 }
 
-.card__image:hover {
+.card__image:hover .card__img--hidden {
     z-index: 2;
 }
-
 
 .card__discount {
     background-color: red;
@@ -128,6 +127,7 @@ main {
     top: 10px;
     right: 0;
     background-color: white;
+    z-index: 3;
 }
 
 .card__label {
@@ -142,6 +142,7 @@ main {
     position: absolute;
     left: 0;
     bottom: 100px;
+    z-index: 3;
 }
 
 .card__price {
