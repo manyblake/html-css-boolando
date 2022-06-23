@@ -23,22 +23,23 @@ header {
     background-color: #ff6900;
     color: white;
     padding: 24px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     width: 100%;
     z-index: 99;
 }
 
 header .container {
-    display: inherit;
+    display: flex;
     justify-content: space-between;
-    align-items: inherit;
+    align-items: center;
 }
 
 header a {
     color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 header .header__logo {
@@ -56,13 +57,13 @@ header .header__logo {
     gap: 10px;
 }
 
-header .header__actions-box {
+.header__actions-box {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-header .header__actions-box svg {
+.header__actions-box svg {
     height: 16px;
 }
 
@@ -84,16 +85,16 @@ main {
     z-index: 1;
 }
 
+.card__image {
+    position: relative;
+}
+
 .card__image img {
     width: 100%;
 }
 
 .card__image--default {
     position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
     z-index: 1;
 }
 
@@ -103,7 +104,6 @@ main {
     right: 0;
     left: 0;
     bottom: 0;
-
 }
 
 .card__image:hover .card__img--hidden {
@@ -131,10 +131,6 @@ main {
     z-index: 3;
 }
 
-.card__hearth:hover {
-    color: red;
-}
-
 .card__label {
     padding: 8px 10px;
     color: white;
@@ -146,7 +142,7 @@ main {
 .card__label-box {
     position: absolute;
     left: 0;
-    bottom: 100px;
+    bottom: 40px;
     z-index: 3;
 }
 
@@ -160,13 +156,7 @@ main {
 }
 
 .hide-label {
-    position: relative;
-    z-index: -1;
-}
-
-.hide-label--only-discont {
-    position: absolute;
-    left: 0;
+    display: none;
 }
 
 footer {
