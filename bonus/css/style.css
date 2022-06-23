@@ -14,10 +14,32 @@ ul, ol, menu {
     list-style: none;
 }
 
+/* Modifiers */
+
 .footer--justify-sb {
     display: flex;
     justify-content: space-between;
 }
+
+header a {
+    color: white;
+}
+
+/* :hover */
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.card__image:hover .card__img--hidden {     /* Produce l'effetto di "sparizione" dell'immagine di default */
+    z-index: 2;
+}
+
+.card__hearth:hover {
+    color: red;
+}
+
+
 
 header {
     background-color: #ff6900;
@@ -28,27 +50,19 @@ header {
     z-index: 99;
 }
 
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
-    color: white;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-header .header__logo {
+.header__logo {
     height: 30px;
-}
-
-.container {
-    width: 1380px;
-    margin: 0 auto;
 }
 
 .header__category-box {
@@ -79,6 +93,8 @@ main {
     gap: 20px;
 }
 
+/* Card e tutti i suoi componenti interni */
+
 .card {
     position: relative;
     width: calc((100% - 40px) /3 );
@@ -106,10 +122,6 @@ main {
     bottom: 0;
 }
 
-.card__image:hover .card__img--hidden {
-    z-index: 2;
-}
-
 .card__discount {
     background-color: red;
 }
@@ -129,10 +141,6 @@ main {
     right: 0;
     background-color: white;
     z-index: 3;
-}
-
-.card__hearth:hover {
-    color: red;
 }
 
 .card__label {
